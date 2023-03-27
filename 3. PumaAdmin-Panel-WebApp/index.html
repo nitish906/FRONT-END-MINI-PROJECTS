@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2{
+        font-size: 50px;
+        text-decoration: underline;
+        color: rgb(93, 0, 255);
+        font-family: monospace;
+        text-transform: uppercase;
+      }
+      /* div{
+        display: flex;
+      } */
+
+      input[type="text"],
+      input[type="number"],
+      input[type="url"]{
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing:  border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize:  vertical;
+      }
+
+      input[type="submit"]{
+        background-color: #2b9e3a;
+        color: white;
+        padding: 12px 20px;
+        cursor: pointer;
+        width: 25%;
+        font-size: 20px;
+        border-radius: 20px;
+      }
+      input[type="submit"]:hover{
+        background-color: aqua;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <button>
+        <a href="inventory.html">Show Products</a>
+      </button>
+    </div>
+    <div>
+      <h2>PUMA ADMIN PANEL</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      <div>
+        <form action="" id="products" onsubmit="storeData(event)" >
+
+          <label for="">Type</label>
+          <br>
+          <input type="text"  id="type" placeholder="Enter Product type">
+          <br>
+          <label for="">Description</label>
+          <br>
+          <input type="text" id="desc" placeholder="Enter product description">
+          <br>
+          <label for="">price</label>
+          <br>
+          <input type="number" id="price" placeholder="Enter Price in Rs">
+          <br>
+          <label for="">Images URL</label>
+          <br>
+          <input type="url" id="image" placeholder="Enter Image Url">
+          <br>
+          <input type="submit" id="add_product">
+
+        </form>
+      </div>
+   
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
+
+
